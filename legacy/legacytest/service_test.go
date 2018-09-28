@@ -3,7 +3,7 @@ package legacytest
 import (
 	"testing"
 
-	"github.com/giantswarm/certs/legacy"
+	"github.com/giantswarm/legacycerts/legacy"
 )
 
 func Test_Fake_Service_SearcherInterface(t *testing.T) {
