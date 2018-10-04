@@ -118,8 +118,27 @@ func ValidComponent(el ClusterComponent, components []ClusterComponent) bool {
 	return false
 }
 
-// CompactTLSAssets is a struct used by operators to store stringified TLS assets.
+// CompactTLSAssets is a struct used by operators to store stringified compacted TLS assets.
 type CompactTLSAssets struct {
+	APIServerCA       string
+	APIServerKey      string
+	APIServerCrt      string
+	WorkerCA          string
+	WorkerKey         string
+	WorkerCrt         string
+	ServiceAccountCA  string
+	ServiceAccountKey string
+	ServiceAccountCrt string
+	CalicoClientCA    string
+	CalicoClientKey   string
+	CalicoClientCrt   string
+	EtcdServerCA      string
+	EtcdServerKey     string
+	EtcdServerCrt     string
+}
+
+// TLSAssets is a struct used by operators to store stringified TLS assets.
+type TLSAssets struct {
 	APIServerCA       string
 	APIServerKey      string
 	APIServerCrt      string
